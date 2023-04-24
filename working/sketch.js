@@ -11,8 +11,8 @@ function setup() {
   let splatterY = random(height);
   let xSize = random(10, 50);
   let ySize = random(10, 50);
-  splatters.push(new Splatter(splatterX, splatterY, xSize, ySize));
-  splatters[0].splat();
+  splatters.push(new Splatter(splatterX, splatterY));
+  splatters[0].splat(xSize, ySize);
   splatters[0].show();
 }
 
